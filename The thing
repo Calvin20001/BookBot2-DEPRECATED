@@ -1,0 +1,45 @@
+const Discord = require ('discord.js');
+const bot = new Discord.Client();
+
+const token = 'Njk4MjExOTM0OTQ4MDMyNTIz.XpIvCA.DT8yzM6414ds0-pwJrvehoJNVN8';
+
+const PREFIX = '!';
+bot.login(token);
+
+bot.on('ready', () =>{
+    console.log('This bot is online!')
+})
+
+bot.on('message', message=>{
+
+    //let args = message.content.substring(PREFIX.length).split(" ");
+    if(message.content ==  "hi"){
+        message.reply('HELLO FRIEND!')
+    } 
+    if(message.content == "!book"){
+        message.reply('https://docs.google.com/document/d/1FHsDuKv10bOqAaXcEeR2VPgy1qaItO8rPlci_3zTkvk/edit?usp=sharing%27)
+    }
+    if(message.content ==  "!board"){
+        message.reply('https://docs.google.com/document/d/1tCw2NY5VoXpCT-tUTlgSq1nLFihd9vSz3sLt3nj4J18/edit%27)
+    }
+    if(message.content == "!help"){
+        message.reply('hi for a greeting from book bot!  !book for book link!  !board for board link!')
+    }
+   if(message.content -- "!helpadmin"){ 
+       message.reply('Ok, There is Dyno, Mee6, and Bloxlink. Bloxlink is highly inactive.')
+   })
+   {
+  "name": "book-bot",
+  "version": "1.0.0",
+  "description": "(index.js)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo "Error: no test specified" && exit 1"
+  },
+  "author": "Calvin",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.1.1"
+  },
+  "devDependencies": {}
+}
